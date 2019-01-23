@@ -1,0 +1,16 @@
+{
+  "name": "DM-AUTOMATICA-TWITTER",
+  "description": "Script que envia mensagem automatica para seguidores utilizando APS schedular",
+  "image": "heroku/python",
+  "keywords": ["python", "twitter"],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "clock": {
+      "quantity": 1
+    }
+  }
+}
