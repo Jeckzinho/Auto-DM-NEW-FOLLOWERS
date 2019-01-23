@@ -45,7 +45,7 @@ def get_old_followers(username):
 def save_followers(username, followers_list):
     db = client.get_default_database()
     coll = db["followers"]
-    coll.update_one({"username":username},
+    coll.insert({"username":username},
                     {"$set": {"username":username, "followers":followers_list}},
                     upsert=True)
 
